@@ -1,54 +1,102 @@
-# React + TypeScript + Vite
+# 📊 Creative Sales & Purchase Dashboard (RTL, Farsi)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, clean, and fully interactive Sales & Purchase Dashboard built with **React**, **TypeScript**, and **Tailwind CSS v4** — designed specifically for **RTL** layout and **Farsi** locale.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌐 Fully RTL layout (Farsi)
+- 🧠 Smart reusable table (SmartList) with:
+  - Filtering
+  - Column sorting
+- 📊 Beautiful charts (Recharts)
+- 📥 Export data to CSV
+- 📝 Editable settings with real-time validation
+- 🔔 Clean toast notifications
+- 🎨 Responsive modern UI using TailwindCSS
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📁 Project Structure
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+src/
+├── components/
+│   ├── charts/             # Chart components (line, bar, pie)
+│   ├── ui/                 # Shared UI components (Input, Card)
+│   └── SmartList.tsx       # Reusable table component
+├── pages/
+│   ├── Overview.tsx
+│   ├── Sales.tsx
+│   ├── Purchases.tsx
+│   ├── Inventory.tsx
+│   ├── Reports.tsx
+│   └── Settings.tsx
+├── types/data.ts          # TypeScript interfaces
+├── utils/exportToCSV.ts   # CSV export helper
+public/
+└── data/                  # JSON mock data (overview, sales, etc)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 Tech Stack
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- ⚛️ React + TypeScript
+- 💨 Tailwind CSS v4
+- 🧩 Headless UI (Tabs)
+- 📊 Recharts (Charts)
+- 🗃️ JSON (as mock API)
+
+---
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
 ```
+
+> Open `http://localhost:5173` in your browser
+
+---
+
+## 📊 Data Sources (Mocked)
+
+All data is stored in `/public/data/` and loaded via `fetch` in each page:
+
+- `overview.json`
+- `sales.json`
+- `purchases.json`
+- `inventory.json`
+- `reports.json`
+- `settings.json`
+
+---
+
+## 📦 Reusable Components
+
+### ✅ SmartList
+A powerful, reusable table with filtering, sorting, and dynamic column support.
+
+### ✅ DashboardCard
+Displays metrics like total sales, purchases, inventory count, etc.
+
+### ✅ Input (with validation)
+Text input with RTL support and real-time error messaging.
+
+
+
+## 📄 License
+
+MIT — Feel free to use and modify.
+
+---
+
+## 🙌 Acknowledgments
+
+Thanks to:
+- [TailwindCSS](https://tailwindcss.com)
+- [Headless UI](https://headlessui.com)
+- [Recharts](https://recharts.org)
+
+> Built as a frontend interview project with ❤️
