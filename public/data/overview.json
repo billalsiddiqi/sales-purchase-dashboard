@@ -1,0 +1,16 @@
+{
+  "totalSales": 1250000,
+  "totalPurchases": 920000,
+  "totalInventoryItems": 245,
+  "pendingOrders": 8,
+  "monthlySummary": [
+    { "month": "حمل", "sales": 480000, "purchases": 360000 },
+    { "month": "ثور", "sales": 6200000, "purchases": 440000 },
+    { "month": "جوزا", "sales": 530000, "purchases": 400000 }
+  ],
+  "topSellingItems": [
+    { "id": 1, "name": "گوشی سامسونگ A53", "unitsSold": 350 },
+    { "id": 2, "name": "هدفون بی‌سیم شیائومی", "unitsSold": 290 },
+    { "id": 3, "name": "لپتاپ لنوو ThinkPad", "unitsSold": 215 }
+  ]
+}

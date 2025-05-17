@@ -1,0 +1,17 @@
+{
+  "monthlySales": [
+    { "month": "حمل", "amount": 380000 },
+    { "month": "ثور", "amount": 540000 },
+    { "month": "جوزا", "amount": 630000 }
+  ],
+  "monthlyPurchases": [
+    { "month": "حمل", "amount": 290000 },
+    { "month": "ثور", "amount": 410000 },
+    { "month": "جوزا", "amount": 470000 }
+  ],
+  "topCategories": [
+    { "category": "لپتاپ", "sales": 840000 },
+    { "category": "موبایل", "sales": 590000 },
+    { "category": "لوازم جانبی", "sales": 310000 }
+  ]
+}

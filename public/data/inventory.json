@@ -1,0 +1,23 @@
+[
+  {
+    "id": 3001,
+    "name": "هارد SSD سامسونگ 1TB",
+    "category": "ذخیره‌سازی",
+    "stock": 35,
+    "unitPrice": 2200
+  },
+  {
+    "id": 3002,
+    "name": "موس Logitech MX Master",
+    "category": "لوازم جانبی",
+    "stock": 8,
+    "unitPrice": 3500
+  },
+  {
+    "id": 3003,
+    "name": "هدست Razer Kraken",
+    "category": "صوتی",
+    "stock": 24,
+    "unitPrice": 4500
+  }
+]
